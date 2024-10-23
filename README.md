@@ -1,7 +1,7 @@
-📈 DATAFEST2024 Resources 🎉
+# 📈 DATAFEST2024 Resources 🎉
 
 
-Directora académica: Patricia Reyes Silva 
+Coordinadora académica: Patricia Reyes Silva 
 
 Team
 - Renzo Andree Espíritu Cueva 👓
