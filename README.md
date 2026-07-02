@@ -1,17 +1,16 @@
 # ATM Cash Demand Forecasting & Replenishment Optimization — DataFest 2024
 
+**Stack:** Python · skforecast · LightGBM · scikit-learn · Google OR-Tools · Jupyter
+
 > A team submission to **DataFest 2024**, a national data science competition organized by **Banco de Crédito del Perú (BCP)** and **Universidad ESAN**, tasking student teams with forecasting ATM cash demand and optimizing replenishment schedules under real operational constraints.
 
 **Team:** Grupo 10 · 5 members · Academic Coordinator: Patricia Reyes Silva
-
-**Stack:** Python · skforecast · LightGBM · scikit-learn · Google OR-Tools · Jupyter
 
 ---
 
 ## Table of Contents
 
 - [My Contribution](#my-contribution)
-- [Overview](#overview)
 - [Problem Statement](#problem-statement)
 - [Dataset](#dataset)
 - [Skills Demonstrated](#skills-demonstrated)
@@ -27,8 +26,6 @@ This was a 5-person team competition. **I individually owned the forecasting wor
 
 ---
 
-## Overview
-
 The competition's objective was to forecast daily cash demand at individual ATMs and use those forecasts to schedule cash replenishment in a way that minimizes operational cost — combining a genuine time-series forecasting problem with a downstream constrained-optimization problem, evaluated end-to-end.
 
 ## Problem Statement
@@ -41,6 +38,8 @@ Two ATM types (A and B) draw down cash daily and must be replenished before runn
 
 ## Dataset
 Historical daily transaction data (`Datafest2024_Train.csv`, `Datafest2024_Test.csv`) covering per-ATM cash demand, transaction dates, ATM type (A/B), and end-of-day balances, with clear weekly and monthly seasonal patterns across ATMs.
+
+> **Note:** the raw dataset is not included in this repository. DATAFEST 2024's official rules explicitly prohibited extracting the dataset from the competition environment by any means, so it's omitted here by design, not by oversight. The notebooks reference the expected file paths for anyone with legitimate access to the original data.
 
 ---
 
