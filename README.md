@@ -22,7 +22,7 @@
 
 ## My Contribution
 
-This was a 5-person team competition. **I individually owned the forecasting workstream** — the full modeling notebook (`Forecasting_global.ipynb`): exploratory analysis, feature engineering, multi-series vs. uni-series model comparison, hyperparameter search, and backtesting. The replenishment optimization notebook (`optimized.ipynb`, Google OR-Tools constraint programming) was built as a team effort on top of my forecasting output. I'm flagging this split explicitly so the technical depth below is attributed to the right part of the project.
+This was a 5-person team competition. **I individually owned the forecasting workstream** — the full modeling notebook (`Forecasting_global.ipynb`): exploratory analysis, feature engineering, multi-series vs. uni-series model comparison, hyperparameter search, and backtesting. The replenishment optimization notebook (`optimized.ipynb`, Google OR-Tools constraint programming) was built as a team effort on top of my forecasting output.
 
 ---
 
@@ -86,7 +86,7 @@ Both `LGBMRegressor` and `HistGradientBoostingRegressor` were tuned via Bayesian
 | Type A | +9.64% | +35.74% | −15.84% | 17 / 20 |
 | Type B | +7.75% | +46.53% | −22.13% | — |
 
-The multi-series approach won on average and by a wide margin in the best cases, but wasn't universally better — a handful of ATMs saw their forecast degrade when pooled into the shared model, most likely those with demand patterns that diverge meaningfully from the group. That trade-off is reported transparently rather than cherry-picking the aggregate number, which is the more honest way to present a model comparison.
+The multi-series approach won on average and by a wide margin in the best cases, but wasn't universally better — a handful of ATMs saw their forecast degrade when pooled into the shared model, most likely those with demand patterns that diverge meaningfully from the group.
 
 ### Optimization (team effort, built on forecasting output)
 The forecasts feed into a Google OR-Tools `CP-SAT` model that schedules replenishment per ATM under real constraints: fixed capacity by ATM type, replenishment restricted to specific days of the week per type, at most one replenishment per day, and a minimum balance threshold — with the objective of minimizing total replenishment frequency and cost across the forecast horizon.
